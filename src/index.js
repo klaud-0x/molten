@@ -4381,10 +4381,16 @@ curl "${B}/api/tasks/feed" -H "X-Molten-Token: mlt_..."</code>
       <li>30 day activity feed</li>
     </ul>
     <div class="wallet-box">
-      <div class="label">💰 Pay with USDT:</div>
-      <div class="addr">TXdtWvw3QknYfGimkGVTu4sNyzWNe4eoUm</div>
-      <div class="net">Network: Tron (TRC20)</div>
-      <p style="color:#64748b;font-size:0.78em;margin-top:8px">Send USDT → open a <a href="https://github.com/klaud-0x/molten-api/issues">GitHub issue</a> with your tx hash → API key within 1 hour.</p>
+      <div class="label">💰 Pay with Crypto:</div>
+      <div style="margin-bottom:10px">
+        <div class="net" style="margin-bottom:2px">USDT / USDC — Tron (TRC20)</div>
+        <div class="addr">TXdtWvw3QknYfGimkGVTu4sNyzWNe4eoUm</div>
+      </div>
+      <div>
+        <div class="net" style="margin-bottom:2px">USDT / USDC / ETH — Base / Ethereum</div>
+        <div class="addr">0x646238BFEB0D069b55A83b1218686A7e3e9c914c</div>
+      </div>
+      <p style="color:#64748b;font-size:0.78em;margin-top:10px">Send $9 in any supported token → open a <a href="https://github.com/klaud-0x/molten-api/issues">GitHub issue</a> with your tx hash → API key within 1 hour.</p>
     </div>
   </div>
 </div>
