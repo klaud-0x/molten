@@ -8,3 +8,19 @@ DAILY_FREE_LIMIT = "20"
 [[kv_namespaces]]
 binding = "USAGE"
 id = "18c53937c9734310b355f7ee92f8d945"
+
+[[kv_namespaces]]
+binding = "STORE"
+id = "6ecbe026e7714eba8c4c7db73fef3e53"
+
+[[kv_namespaces]]
+binding = "MESSAGES"
+id = "6504f7e9d5ff4ec9957be2b1939debbe"
+
+[[kv_namespaces]]
+binding = "REGISTRY"
+id = "4592b8ea160645c18197e1f6f1f1ddf0"
+
+[[kv_namespaces]]
+binding = "TASKS"
+id = "c4aa68a0618c4b8186693295524d400a"
