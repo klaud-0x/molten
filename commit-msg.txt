@@ -1,0 +1,1 @@
+v7.0: 5 services (Store, Messaging, Registry, Tasks, Anti-Spam), 73 endpoints, new landing page with multi-agent scenarios
