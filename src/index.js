@@ -784,7 +784,8 @@ async function handleWiki(url) {
 
   const limit = Math.min(parseInt(url.searchParams.get('limit') || '3'), 10);
 
-  const searchRes = await fetch(`https://${lang}.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=${limit}&format=json&origin=*`);
+  const wikiUA = { headers: { 'User-Agent': 'Molten/2.0 (https://molten.klaud0x.workers.dev; klaud0x@gmail.com)' } };
+  const searchRes = await fetch(`https://${lang}.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=${limit}&format=json&origin=*`, wikiUA);
   const searchData = await searchRes.json();
   const results = searchData?.query?.search || [];
 
@@ -792,7 +793,7 @@ async function handleWiki(url) {
 
   const articles = await Promise.all(results.map(async r => {
     try {
-      const sumRes = await fetch(`https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(r.title)}`);
+      const sumRes = await fetch(`https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(r.title)}`, wikiUA);
       const sum = await sumRes.json();
       return {
         title: sum.title,
